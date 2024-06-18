@@ -32,28 +32,24 @@ async function getQuestion(){
     
     try{
         questions = await fetch("API/QuestionProvider.php", postConfig)
-            .then(resolved => resolved);
+        .then(resolved => resolved);
 
         questions = await questions.json();
 
         questions.forEach((question) => {
-            let newQuestion = {
+        let newQuestion = {
                 id : question.ID,
                 answer : false
             };
- 
+
             selfAnswers.push(newQuestion);
         });
 
         changeQuestion();    
         startTimer();
     }catch{
-        alert("Please Connect To Server !");
-        setTimeout(() => {
-            window.location.reload();
-        },1000)
+        alert("There seems to be a problem :) \nPlease Reload This Page . .");
     }
-        
 }
 function startTimer(){
     let minCount = Math.floor(responseTime / 60);
@@ -113,6 +109,10 @@ function answerTheQuestion(){
     changeQuestion();
 }
 
+function addZeroToNumber(number){
+    number = number ?? 0;
+    return (number <= 9) ? "0" + number : number;
+}
 // [+] Event Handling
 answerButtons.forEach(button => {
     button.addEventListener("click", clickOnButtonHandler);
