@@ -1,0 +1,80 @@
+/*---Root---*/
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+/*---Stylesheet Variables---*/
+:root{
+    /*___Colors___*/
+    --color__white : #fcfcfc;
+    --color__black-light: #0A0B16;
+    --color__black-smooth: #0a0a0a;
+    --color__blue: #2b7cff;
+    /*___Fonts___*/
+    --font__shabnam:"Shabnam";
+    --font__shabnam-md:"Shabnam-Md";
+    /*___Transitions___*/
+    --transition__simple: all 0.18s ease;
+}
+/*---For All Element---*/
+*, *::before, *::after{
+    box-sizing: inherit;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+input, button{
+    border: none;
+    outline: none;
+}
+button{
+	font-family: inherit;
+}
+/*---Body---*/
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color__black-light);
+    background-image: url("../Asset/Picture/Stars.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-inline: 2rem;
+    background-attachment: fixed;
+    font-family: var(--font__shabnam);
+}
+/*---Component---*/
+.main-section{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+    background-color: var(--color__white);
+    max-width: 48rem;
+    margin: 0 auto;
+    padding:2rem 2.2rem;
+    font-family: var(--font__shabnam-md);
+    transition:var(--transition__simple);
+    -webkit-transition:var(--transition__simple);
+    -moz-transition:var(--transition__simple);
+    -ms-transition:var(--transition__simple);
+    -o-transition:var(--transition__simple);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.main-section--active{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    width: 100%;
+    display: block;
+    height: auto;
+    overflow: hidden;
+}
