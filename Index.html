@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Elements-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hojjat Hekmatipour">
+    <!--Import Files-->
+    <link rel="stylesheet" type="text/css" href="Styles/Font.css">
+    <link rel="stylesheet" type="text/css" href="Styles/Main.css">
+    <link rel="stylesheet" type="text/css" href="Styles/Start.css">
+    <link rel="stylesheet" type="text/css" href="Styles/Exam.css">
+    <link rel="stylesheet" type="text/css" href="Styles/Report.css">
+    <!--Title-->
+    <title>Real world</title>
+</head>
+<body>
+    <!--Start Of Exam-->
+    <div class="start section section--active">
+        <h2 class="start__title section__title">آزمون برای عضویت در سازمان ناسا</h2>
+        <button class="start__button">
+            <span>شروع</span>
+        </button>
+    </div>
+
+    <div class="cont-down section">
+        <span class="cont-down__value">5</span>
+        <div class="cont-down__container">
+            <h2 class="cont-down__title section__title">آزمون در حال شروع</h2>
+        </div>
+    </div>
+    <!--Exam Section-->
+    <section class="exam main-section">
+        <div class="exam__head">
+            <div class="exam-timer">
+                <span class="exam-timer__value">00 : 00</span>
+            </div>
+            <span class="exam__question-count">سوال <span class="exam__question-count--value">1</span></span>
+        </div>
+        <div class="exam__main">
+            <p class="exam__question" data-id="0"></p>
+        </div>
+        <div class="exam__wrapper">
+            <button class="exam__button" data-id="false">
+                <span>غلط</span>
+            </button>
+            <button class="exam__button" data-id="true">
+                <span>بله</span>
+            </button>
+        </div>
+    </section>
+
+    <!--Final report-->
+    <section class="report main-section">
+        <div class="report__head">
+            <div class="report__icon">
+                <img class="report__img" alt="Report Logo" src="Asset/Logos/Accept.svg">
+            </div>
+            <h2 class="report__title">شما در امتحان ورودی اولیه ناسا قبول شدید !</h2>
+        </div>
+        <div class="report__main">
+            <div class="report__details">
+                <div class="report__detail">
+                    <span class="report__detail-title">تعداد سوالات : </span>
+                    <span class="report__detail-value report__detail-value--quesCount">15</span>
+                </div>
+                <div class="report__detail">
+                    <span class="report__detail-title">درصد قبولی شما : </span>
+                    <span class="report__detail-value report__detail-value--percent">70%</span>
+                </div>
+            </div>
+            <div class="report__charts">
+                <div class="report__chart">
+                    <span class="report__chart-title">تعداد جواب های صحیح : </span>
+                    <span class="report__chart-value report__chart-value--correct">9</span>
+                    <div class="report__progress report__progress--correct">
+                        <div class="report__progress-value report__progress-value--correct"></div>
+                    </div>
+                </div>
+                <div class="report__chart">
+                    <span class="report__chart-title">تعداد جواب های غلط : </span>
+                    <span class="report__chart-value report__chart-value--falsy">2</span>
+                    <div class="report__progress report__progress--false">
+                        <div class="report__progress-value report__progress-value--falsy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="application/javascript" src="Scripts/Main.js" defer></script>
+    <script type="application/javascript" src="Scripts/Start.js" defer></script>
+    <script type="application/javascript" src="Scripts/Exam.js" defer></script>
+    <script type="application/javascript" src="Scripts/Report.js" defer></script>
+</body>
+</html>
