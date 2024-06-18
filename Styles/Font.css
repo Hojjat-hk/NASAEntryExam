@@ -1,0 +1,16 @@
+/*---Font Face Of "Shabnam"---*/
+@font-face{
+    font-family: "Shabnam";
+    src: local("Shabnam"),
+         url("../Asset/Fonts/Shabnam-FD.eot") format("eot"),
+         url("../Asset/Fonts/Shabnam-FD.woff") format("woff"), 
+         url("../Asset/Fonts/Shabnam-FD.woff2") format("woff2");
+}
+
+@font-face{
+    font-family: "Shabnam-Md";
+    src: local("Shabnam-Md"), local("Shabnam Medium")
+         url("../Asset/Fonts/Shabnam-Medium-FD.eot") format("eot"),
+         url("../Asset/Fonts/Shabnam-Medium-FD.woff") format("woff"), 
+         url("../Asset/Fonts/Shabnam-Medium-FD.woff2") format("woff2");
+}
