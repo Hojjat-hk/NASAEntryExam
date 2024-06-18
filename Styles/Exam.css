@@ -1,0 +1,87 @@
+.exam__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    color: var(--color__black-smooth);
+}
+.exam-timer{
+    font-size: 1.9rem;
+}
+.exam-timer__value{
+    transition: var(--transition__simple);
+    -webkit-transition: var(--transition__simple);
+    -moz-transition: var(--transition__simple);
+    -ms-transition: var(--transition__simple);
+    -o-transition: var(--transition__simple);
+}
+.exam-timer__value--danger{
+    color: #D71E1BFF;
+}
+.exam__question-count{
+    font-weight: bold;
+}
+.exam__main{
+    color: var(--color__black-smooth);
+    font-size: 1.45rem;
+    text-align: right;
+    margin-top: 3rem;
+}
+.exam__question{
+    height: 95px;
+    overflow: hidden;
+    white-space: wrap;
+    direction: rtl;
+}
+.exam__wrapper{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 2rem;
+}
+.exam__button{
+    display: block;
+    height: 3.5rem;
+    max-width: 18rem;
+    width: 100%;
+    background-color: transparent;
+    border: 0.3rem solid var(--color__blue);
+    cursor: pointer;
+    border-radius: 6.5rem;
+    -webkit-border-radius: 6.5rem;
+    -moz-border-radius: 6.5rem;
+    -ms-border-radius: 6.5rem;
+    -o-border-radius: 6.5rem;
+    transition: var(--transition__simple);
+    -webkit-transition: var(--transition__simple);
+    -moz-transition: var(--transition__simple);
+    -ms-transition: var(--transition__simple);
+    -o-transition: var(--transition__simple);
+    &:hover{
+        transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+        -moz-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        -o-transform: scale(1.07);
+}
+}
+.exam__button, .exam__button > span{
+    transition: var(--transition__simple);
+    -webkit-transition: var(--transition__simple);
+    -moz-transition: var(--transition__simple);
+    -ms-transition: var(--transition__simple);
+    -o-transition: var(--transition__simple);
+}
+.exam__button > span{
+    color: var(--color__blue);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+.exam__button--active{
+    background-color: var(--color__blue);
+}
+.exam__button--active > span{
+    color: var(--color__white);
+}
