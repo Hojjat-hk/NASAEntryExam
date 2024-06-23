@@ -75,7 +75,7 @@
 .report__progress-value{
     justify-self: start;
     height: 100%;
-    animation: scaleOn 0.8s ease forwards;
+    animation: scaleOn 0.75s ease forwards;
     animation-iteration-count: 1;
 }
 .report__progress-value--correct{
